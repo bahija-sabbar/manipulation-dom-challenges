@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+  #todo li { cursor: pointer; padding: 4px 0; }
+  .done { text-decoration: line-through; opacity: 0.5; }
+
+  .rounded-img { width: 100%; max-width: 320px; border-radius: 12px; display: block; }
+
+ #todo li { cursor: pointer; padding: 4px 0; }
+  .done { text-decoration: line-through; opacity: 0.5; }
+
+
+</style>
+ 
+</head>
+<body>
+<p>Bonjour, je m'appelle <span id="firstname"></span> !</p>
+ 
+
+
+<article class="card">
+  <h2 id="user-name"></h2>
+  <p id="user-email"></p>
+  <p id="user-role"></p>
+</article>
+
+
+<article class="card user-card">
+  <h2 class="card-title"></h2>
+  <p class="card-email"></p>
+  <p class="card-role"></p>
+</article>
+
+
+<button id="btn">Cliquez-moi</button>
+
+<p id="text">Ce texte va changer de style.</p>
+<button id="style-btn">Styliser</button>
+
+<button id="toggle-btn">Afficher/Masquer les détails</button>
+<div id="details" class="card" style="display: none;">
+  <p>Voici les détails cachés. Le DOM permet de les révéler sans recharger la page.</p>
+</div>
+
+<h2>Création dynamique</h2>
+
+
+
+<div class="row">
+  <input type="text" id="name-input" placeholder="Écrivez quelque chose">
+  <button id="validate-btn">Valider</button>
+</div>
+<h3 id="output"></h3>
+
+
+ 
+<div id="image-container" class="card"></div>
+
+
+
+<!-- <ul id="todo">
+  <li>Apprendre le DOM</li>
+  <li>Pratiquer les événements</li>
+</ul>
+<div class="row">
+  <input type="text" id="todo-input" placeholder="Nouvelle tâche">
+  <button id="add-btn">Ajouter</button>
+</div>
+<input type="text" id="live-input" placeholder="Tapez en direct">
+<p>Aperçu : <strong id="live-output"></strong></p> -->
+
+
+<ul id="todo">
+  <li>Apprendre le DOM</li>
+  <li>Pratiquer les événements</li>
+</ul>
+<div class="row">
+  <input type="text" id="todo-input" placeholder="Nouvelle tâche">
+  <button id="add-btn">Ajouter</button>
+</div>
+
+    <script src="script.js" ></script>
+</body>
+</html>
